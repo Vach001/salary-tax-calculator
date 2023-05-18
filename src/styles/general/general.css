@@ -8,16 +8,8 @@
   font-family: "Noto Sans Armenian", sans-serif;
 }
 
-.header-image {
-  background-image: url("../../images/dram.png");
-  background-repeat: no-repeat;
-  justify-content:center;
-  width:100px;
-  position: center;
-  background-size: cover;
-}
-
 .header-text {
+  background-color: rgb(230, 250, 250);
   text-align: center;
   text-transform: uppercase;
   justify-content: center;
@@ -31,6 +23,20 @@
   background-size: cover;
   background-color: #c9fcdaee;
   padding: auto; 
+}
+/* main section style*/
+
+#latest_home{
+  width: 100%;
+  position: relative;
+  padding: 20px;
+}
+
+.material_block{
+  background: #fff;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)
 }
 
 .calc-page-fields {
