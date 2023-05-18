@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Noto Sans Armenian", sans-serif;
+}
+
+.calc-page{
+  background-image: url("../../images/ararat.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  background-color: #c9fcdaee;
+  padding: auto; 
+}
+
+.header-image {
+  background-image: url("../../images/dram.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width:100px;
+  height: auto;
+  position: cover;
+  background-size: cover;
+}
+
+.header-text {
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  color: rgb(42, 102, 3);
+  }
+
+.calc-page-fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    flex-direction: column;
+  }
+
+  section {
+    order: -1;
+  }
+}
+
+aside {
+  flex: 1;
+}
+
+section {
+  flex: 3;
+}
