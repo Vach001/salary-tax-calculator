@@ -21,7 +21,7 @@
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
-  background-color: #c9fcdaee;
+  background-color: #c9fcdab0;
   padding: auto; 
 }
 /* main section style*/
@@ -68,6 +68,12 @@
   color: #fff;
   border-radius: 12px 0 0 12px;
 }
+#mk {
+  background: #000b42;
+  border-right: 1px solid #fff;
+  color: #fff;
+  border-radius: 0 12px 12px 0;
+}
 #kx, #mk {
   cursor: pointer;
   width: 50%;
@@ -77,6 +83,96 @@
   font-size: 1.5rem;
   font-weight: 700;
 }
+.fa, .fas {
+  font-weight: 900;
+}
+.fa, .far, .fas {
+  font-family: "Font Awesome 5 Free";
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+/* Soc section style*/
+.pension-2 {
+  cursor: text;
+  text-align: right;
+  width: 100%;
+  color: #777;
+  line-height: 1.7rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 1.1rem
+}
+
+#pno,#pik {
+  cursor: pointer;
+  width: 33%;
+  padding: 12px;
+  background: #ddd;
+  color: #777;
+  font-size: 1.2rem;
+  display: table-cell;
+  text-align: right;
+  vertical-align: top
+}
+
+#pno b,#pik b,#psi b {
+  font-size: 1.7rem
+}
+
+#pno {
+  border-radius: 0 12px 12px 0
+}
+
+#pik {
+  border-radius: 12px 0 0 12px
+}
+
+#psi {
+  cursor: pointer;
+  padding: 12px;
+  width: 34%;
+  background: #fb1b1f;
+  color: #fff;
+  font-size: 1.3rem;
+  border-right: 2px solid #fff;
+  border-left: 2px solid #fff;
+  display: table-cell;
+  text-align: right;
+  vertical-align: top
+}
+
+/*It setificat*/
+
+.it-row {
+  width: calc(100% - 40px);
+  padding-top: 0;
+  color: #777;
+  line-height: 1.7rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  display: inline-block;
+  text-align: right
+}
+
+.it-switch {
+  width: 15%;
+  line-height: 1.7rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle
+}
+
+
+
 
 
 .calc-page-fields {
