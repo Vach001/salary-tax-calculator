@@ -171,6 +171,124 @@
   vertical-align: middle
 }
 
+/* input and section style*/
+.pen-sub {
+  display: table-cell;
+  width: 35%;
+  color: #777;
+  padding: 9px;
+  line-height: 1.7rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-align: right;
+  border: 1px solid #ccc;
+  vertical-align: middle
+}
+
+#soctax,#socother,#pentax,#clr,#droshmanish {
+  cursor: copy;
+  width: 65%;
+  text-align: right;
+  font-weight: 400;
+  font-family: Sans-serif,Roboto,courier,AAArial,ATahoma;
+  padding: 9px 8px 5px 0;
+  color: #777;
+  letter-spacing: .2rem;
+  background: #eee;
+  font-size: 3rem;
+  display: table-cell;
+  vertical-align: middle;
+  border-left: 2px solid #fff
+}
+
+#clr {
+  color: #000b42!important;
+  background: #ddd!important
+}
+
+#clr:hover {
+  background: #ccc!important
+}
+
+#soctax:hover,#socother:hover,#pentax:hover,#droshmanish:hover {
+  color: #444!important
+}
+
+#soctext {
+  cursor: text;
+  width: 100%;
+  text-align: right;
+  font-weight: 700;
+  font-family: AAArial,ATahoma;
+  padding: 9px 0 5px;
+  color: #777;
+  letter-spacing: .02rem;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font-size: 3rem;
+  display: block
+}
+
+#soctext b {
+  color: #444
+}
+
+.pension {
+  cursor: text;
+  float: left;
+  text-align: right;
+  width: 100%;
+  color: #69b;
+  line-height: 1.7rem;
+  font-weight: 400;
+  margin: 25px 0 5px;
+  font-size: 1.1rem
+}
+
+#socinput {
+  cursor: text;
+  display: inline-block;
+  width: 100%;
+  font-weight: 700;
+  background: #fff;
+  margin-top: 0;
+  font-size: 1.3rem;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 3px solid #ddd
+}
+
+#socinput input {
+  font-size: 4.2rem;
+  line-height: 5.8rem;
+  font-weight: 400;
+  font-family: Sans-serif,Roboto,courier,AAArial;
+  text-align: right;
+  border: 0!important;
+  padding: 0!important;
+  padding-right: 5px!important;
+  width: 100%;
+  color: #000b42;
+  letter-spacing: .3rem;
+  background-color: transparent!important;
+  margin: 5px 0
+}
+
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0
+}
+
+.catcalc {
+  display: inline-block;
+  cursor: pointer;
+  padding: 12px 16px;
+  margin: 0 10px 10px 0;
+  font-size: 1.3rem;
+  background: #f3f3f3;
+  color: #777;
+  border-radius: 6px
+}
 
 
 
