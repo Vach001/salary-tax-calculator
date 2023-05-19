@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  display: flex;
   flex-direction: column;
   min-height: 100%;
   font-family: "Noto Sans Armenian", sans-serif;
@@ -50,53 +49,41 @@
   width: 100%;
   float: left;
 }
+
 #calc_soc {
   letter-spacing: .03rem;
   width: 100%;
-  display: inline-block;
+  display: inline-block
 }
 .table-row {
   width: 100%;
   display: table;
   table-layout: fixed;
-  margin-bottom: 20px;
+  margin-bottom: 20px
 }
-
-#kx {
-  background: #000b42;
-  border-right: 1px solid #fff;
-  color: #fff;
-  border-radius: 12px 0 0 12px;
+.mb2 {
+  margin-bottom: 2px!important
 }
-#mk {
-  background: #000b42;
-  border-right: 1px solid #fff;
-  color: #fff;
-  border-radius: 0 12px 12px 0;
-}
-#kx, #mk {
+#kx,#mk {
   cursor: pointer;
   width: 50%;
   padding: 15px 5px;
   text-align: center;
   display: inline-block;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 700
 }
-.fa, .fas {
-  font-weight: 900;
+#kx {
+  background: #000b42;
+  border-right: 1px solid #fff;
+  color: #fff;
+  border-radius: 12px 0 0 12px
 }
-.fa, .far, .fas {
-  font-family: "Font Awesome 5 Free";
-}
-.fa, .fab, .fad, .fal, .far, .fas {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
+#mk {
+  background: #ddd;
+  border-left: 1px solid #fff;
+  color: #777;
+  border-radius: 0 12px 12px 0
 }
 /* Soc section style*/
 .pension-2 {
@@ -148,7 +135,7 @@
   vertical-align: top
 }
 
-/*It setificat*/
+/*It sertificat*/
 
 .it-row {
   width: calc(100% - 40px);
@@ -291,8 +278,6 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
 }
 
 
-
-
 .calc-page-fields {
   display: flex;
   justify-content: center;
@@ -303,6 +288,7 @@ main {
   display: flex;
   flex: 1;
 }
+/* for media screan to max width 500px */
 
 @media screen and (max-width: 500px) {
   main {
