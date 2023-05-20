@@ -1,4 +1,4 @@
-import { grossSalary } from "../Calculator/Calculator.js"
+import { grossSalary } from "../Calculator.js"
 
 export function IncomeTax(grossSalary, sertificat = false) {
     {
