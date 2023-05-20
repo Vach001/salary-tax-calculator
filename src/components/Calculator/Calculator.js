@@ -4,38 +4,9 @@ class Salary {
   
       return Salary.netSalary()
     }
-    static incomeTax(sertificat = false) {
-      // Եկամտային հարկ
-      if (sertificat) {
-        return this.grossSalary * 0.1;
-      }
-  
-      return this.grossSalary * 0.2;
+   
     }
-    static socialSecurityPayment() {
-      // Սոցվճար
-      const salary = this.grossSalary;
-      const voluntary = false; // կամավոր
-      const mandatory = false; //պարտադիր
-  
-      if (mandatory) {
-        if (salary > 1125000) {
-          return 87500;
-        } else if (salary > 500000) {
-          return salary * 0.1 - 25000;
-        } else {
-          return salary * 0.05;
-        }
-      } 
-      if (voluntary) {
-        if (salary > 1125000) {
-          return 56250;
-        } else {
-          return salary * 0.5;
-        }
-      }
-      return 0;
-    }
+    
   
     static stampFee() {
       // Դրոշմանիշային վճար

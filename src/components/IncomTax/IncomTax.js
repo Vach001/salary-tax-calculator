@@ -1,6 +1,6 @@
 import { grossSalary } from "../Calculator/Calculator.js"
 
-function IncomeTax(grossSalary = 200000, sertificat = false) {
+export function IncomeTax(grossSalary, sertificat = false) {
     {
         // Եկամտային հարկ
         if (sertificat === true) {
