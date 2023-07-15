@@ -1,12 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Աշխատավարձ</title>
-</head>
-<body>
+<html lang="hy">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/general/general.css" />
+    <title>Աշխատավարձի հաշվիչ</title>
+    <link rel="icon" href="src/images/favicon.ico" sizes="35x35" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@100;300;700&display=swap"
+      rel="stylesheet"
+    />
     
-</body>
+  </head>
+
+  <body>
+    <div>
+      <header class="header-image"></header>
+    </div>
+    <h1 class="header-text">Աշխատավարձի հաշվիչ բոլորի համար</h1>
+    <div class="calc-page">
+      <main id="latest_home" class="material_block">
+        <div id="top_bread2">
+          <div class="bread_head">Աշխատավարձի Հաշվիչ</div>
+        </div>
+        <div id="latest_home_holder">
+          <div id="calc_soc">
+            <div class="table-row">
+              <div
+                id="kx"
+                onclick="slctsoc('kx');"
+                style="
+                  background-color: rgb(0, 11, 66);
+                  color: rgb(255, 255, 255);
+                "
+              >
+                <i class="fas fa-th-large"> </i>ԳՐԱՆՑՎԱԾ
+              </div>
+              <div
+                id="mk"
+                onclick="slctsoc('mk');"
+                style="
+                  float: right;
+                  background-color: rgb(211, 211, 211);
+                  color: rgb(119, 119, 119);
+                "
+              >
+                <i class="fas fa-th-large"> </i>ՄԱՔՈՒՐ
+              </div>
+            </div>
+            <div class="pension-2">
+              Մասնակցում եք արդյո՞ք պարտադիր կուտակային կենսաթոշակային
+              համակարգին: Եթե այո, ապա ի՞նչ հիմունքներով:
+            </div>
+            <div class="table-row">
+              <div
+                id="pik"
+                onclick="slctpension('pik');"
+                style="
+                  background-color: rgb(251, 27, 31);
+                  color: rgb(255, 255, 255);
+                "
+              >
+                <b>ԱՅՈ</b>, կամավոր միացած 07/2018-ից հետո
+              </div>
+              <div
+                id="psi"
+                onclick="slctpension('psi');"
+                style="
+                  background-color: rgb(211, 211, 211);
+                  color: rgb(119, 119, 119);
+                "
+              >
+                <b>ԱՅՈ</b> , պարտադիր կամ մինչ 07/2018 միացած կամավոր
+              </div>
+              <div
+                id="pno"
+                onclick="slctpension('pno');"
+                style="
+                  background-color: rgb(211, 211, 211);
+                  color: rgb(119, 119, 119);
+                "
+              >
+                <b>ՈՉ</b>, մասնակից չեմ
+              </div>
+            </div>
+            <div class="table-row">
+              <div class="it-row">
+                Արդյո՞ք աշխատում եք ՏՏ ոլորտի հարկային
+                <br />
+                արտոնություններից օգտվող ընկերությունում:
+              </div>
+              <div
+                class="it-switch"
+                style="width: 38px; float: right; margin: 0"
+              >
+                <i
+                  class="far fa-check-square"
+                  onclick="chk();"
+                  style="color: #eee; font-size: 3.2rem; cursor: pointer"
+                ></i>
+                <input
+                  type="checkbox"
+                  id="revert"
+                  style="display: none"
+                  name="revert"
+                  onchange="calcsoc();"
+                  value="[object HTMLInputElement]"
+                />
+                <div id="00"></div>
+              </div>
+            </div>
+            <div id="socinput">
+              <input
+                id="soctype"
+                type="text"
+                value="kx"
+                style="display: none"
+                autocomplete="off"
+              />
+              <input
+                id="pensiontype"
+                type="text"
+                value="psi"
+                style="display: none"
+                autocomplete="off"
+              />
+              <input
+                id="shadow"
+                class
+                type="number"
+                min="10000"
+                max="100000000"
+                onclick="clrsoc();"
+                onchange="calcsoc();"
+                oninput="calcsoc();"
+                onsubmit="calcsoc();"
+                value="200000"
+                autocomplete="off"
+              />
+            </div>
+            <div class="table-row mb2">
+              <div class="pen-sub" style="border-radius: 12px 0 0 0">
+                Եկամտահարկ 20% / ՏՏ 10%
+              </div>
+              <div
+                id="soctax"
+                data-clipboard-text="NaN"
+                style="border-radius: 0 12px 0 0"
+                class="tooltip ttp-1"
+                data-text="Copy: Եկամտահարկ"
+              >
+                0
+              </div>
+            </div>
+            <div id="socother" style="display: none">0</div>
+            <div class="table-row mb2">
+              <div class="pen-sub">Սոցիալական վճար</div>
+              <div
+                id="pentax"
+                data-clipboard-text="87500"
+                class="tooltip ttp-1"
+                data-text="Copy: Սոցիալական վճար"
+              >
+                0
+              </div>
+            </div>
+            <div class="table-row mb2">
+              <div class="pen-sub">Դրոշմանիշային վճար</div>
+              <div
+                id="droshmanish"
+                data-clipboard-text="15000"
+                class="tooltip ttp-1"
+                data-text="Copy: Դրոշմանիշ"
+              >
+                0
+              </div>
+            </div>
+            <div class="table-row">
+              <div id="mm" class="pen-sub" style="border-radius: 0 0 0 12px">
+                Պետք է գրանցել
+              </div>
+              <div
+                id="clr"
+                autocomplete="off"
+                data-clipboard-text="NaN"
+                class="tooltip ttp-1"
+                data-text="Copy: Մաքուր Մնացորդ"
+                style="border-radius: 0 0 12px 0"
+              >
+                0
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="calc-page-footer">Armenia | © 2023</footer>
+    <div id="root" />
+
+    <script defer type="module" src="./index.js" />
+
+  </body>
 </html>
